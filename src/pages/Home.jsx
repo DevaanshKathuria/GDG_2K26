@@ -41,11 +41,11 @@ function Home() {
             <h3>Hello, future developer! 👋</h3>
             <p>You just toggled a component state using the useState hook.</p>
           </div>
+        )}
 
         <button onClick={toggleGreeting} className="demo-btn">
           {showGreeting ? 'Hide Welcome' : 'Show Welcome'}
         </button>
-        )}
       </div>
     </div>
   );
