@@ -35,16 +35,16 @@ function Home() {
         <h2>React State Demo</h2>
         <p>Click the button below to see React state in action!</p>
         
-        <button onClick={toggleGreeting} className="demo-btn">
-          {showGreeting ? 'Hide Welcome' : 'Show Welcome'}
-        </button>
-
         {/* Conditional rendering based on state */}
         {showGreeting && (
           <div className="greeting-card">
             <h3>Hello, future developer! 👋</h3>
             <p>You just toggled a component state using the useState hook.</p>
           </div>
+
+        <button onClick={toggleGreeting} className="demo-btn">
+          {showGreeting ? 'Hide Welcome' : 'Show Welcome'}
+        </button>
         )}
       </div>
     </div>
